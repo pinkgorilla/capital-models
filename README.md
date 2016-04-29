@@ -1,2 +1,2 @@
-# models
+# capital-models
 models collection

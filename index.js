@@ -8,5 +8,9 @@ ns.identity.Account = require('./src/identity/account');
 ns.identity.UserProfile = require('./src/identity/user-profile');
 ns.identity.UserOrganizationInfo = require('./src/identity/user-organization-info');
 
+// workplan namespace
+ns.workplan = {};
+ns.workplan.UserWorkplan = require('./src/workplan/user-workplan');
+ns.workplan.Period = require('./src/workplan/period');
 
 module.exports = ns;
