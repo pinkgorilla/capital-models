@@ -1,0 +1,22 @@
+{
+  "name": "capital-models",
+  "version": "1.0.2",
+  "description": "models collection",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pinkgorilla/models.git"
+  },
+  "keywords": [
+    "models"
+  ],
+  "author": "Tris Setiawan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pinkgorilla/models/issues"
+  },
+  "homepage": "https://github.com/pinkgorilla/models#readme"
+}
