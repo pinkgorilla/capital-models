@@ -7,8 +7,7 @@ module.exports = class UserWorkplan extends Base{
     constructor(source){
         super('user-workplan', "1.0.0");
         this.accountId = '';
-        this.initial = '';
-        
+                
         this.periodId = '';
         this.month='';
         this.period = '';
