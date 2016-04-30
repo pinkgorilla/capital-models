@@ -7,6 +7,7 @@ var user = class Account extends Base {
         super('account', '1.0.0');
         this.username;
         this.password;
+        this.email;
         this.locked = false;
         this.confirmed = true;
         this.roles=[];

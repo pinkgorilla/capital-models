@@ -14,7 +14,7 @@ module.exports = class UserWorkplan extends Base{
         this.period = '';
         
         this.items = [];
-        this.completionPercentage = 0;
+        this.completion = 0;
         
 
         if (source)

@@ -11,7 +11,7 @@ module.exports = class BaseModel {
         this._createAgent = '';
         this._updatedBy = '';
         this._updatedDate = '';
-        this._updatedAgent = '';
+        this._updateAgent = '';
     }
 
     stamp(actor, agent) {
