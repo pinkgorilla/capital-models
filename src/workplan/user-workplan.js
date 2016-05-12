@@ -1,5 +1,5 @@
 'use strict'
-
+var Period = require('./period');
 var Base = require('../base');
 
 module.exports = class UserWorkplan extends Base{
@@ -9,9 +9,9 @@ module.exports = class UserWorkplan extends Base{
         this.accountId = '';
                 
         this.periodId = '';
-        this.month='';
-        this.period = '';
+        this.period = new Period();
         
+        this.code = '';
         this.items = [];
         this.completion = 0;
         

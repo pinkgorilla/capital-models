@@ -11,6 +11,7 @@ ns.identity.UserOrganizationInfo = require('./src/identity/user-organization-inf
 // workplan namespace
 ns.workplan = {};
 ns.workplan.UserWorkplan = require('./src/workplan/user-workplan');
+ns.workplan.UserWorkplanItem = require('./src/workplan/user-workplan-item');
 ns.workplan.Period = require('./src/workplan/period');
 ns.map = require('./src/map')
 
