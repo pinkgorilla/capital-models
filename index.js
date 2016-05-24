@@ -13,6 +13,7 @@ ns.workplan = {};
 ns.workplan.UserWorkplan = require('./src/workplan/user-workplan');
 ns.workplan.UserWorkplanItem = require('./src/workplan/user-workplan-item');
 ns.workplan.Period = require('./src/workplan/period');
+ns.workplan.UserWorkplanSummary = require('./src/workplan/user-workplan-summary');
 ns.map = require('./src/map')
 
 module.exports = ns;

@@ -11,8 +11,8 @@ module.exports = class Period extends Base{
         this.to = '';
         this.closed = '';
 
-        if (source)
-            Object.assign(this, source);
+
+        this.copy(source); 
     }
 }
  

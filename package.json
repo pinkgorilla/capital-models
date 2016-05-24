@@ -1,6 +1,6 @@
 {
   "name": "capital-models",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "models collection",
   "main": "index.js",
   "scripts": {

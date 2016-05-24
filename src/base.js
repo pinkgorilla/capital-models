@@ -27,10 +27,16 @@ module.exports = class BaseModel {
             this._createAgent = agent;
 
         var ticks = ((now.getTime() * 10000) + 621355968000000000);
-        
+
         this._stamp = ticks.toString(16);
         this._updatedBy = actor;
         this._updatedDate = now;
         this._updateAgent = agent;
+    }
+
+    copy(source) {
+        if (source)
+            for (var prop in this)
+                this[prop] = source[prop];
     }
 }

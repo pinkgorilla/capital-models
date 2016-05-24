@@ -20,7 +20,7 @@ module.exports = class UserWorkplanItem extends Base {
         this.cancelReason = '';
 
 
-        if (source)
-            Object.assign(this, source);
+
+        this.copy(source); 
     }
 }
