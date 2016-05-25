@@ -1,8 +1,8 @@
 ###**classes**
-+ [Account][docs/identity/account]
-+ [UserOrganizationInfo][docs/identity/user-organization-info]
-+ [UserProfile][docs/identity/user-profile]
++ [Account][identity/account]
++ [UserOrganizationInfo][identity/user-organization-info]
++ [UserProfile][identity/user-profile]
 
-[docs/identity/account]: docs/identity/account.md
-[docs/identity/user-organization-info]: docs/identity/user-organization-info.md
-[docs/identity/user-profile]: docs/identity/user-profile.md
+[identity/account]: identity/account.md
+[identity/user-organization-info]: identity/user-organization-info.md
+[identity/user-profile]: identity/user-profile.md
