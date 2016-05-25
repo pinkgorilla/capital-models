@@ -22,9 +22,10 @@ initialize new object.
 
 **parameters**
 
- - **type** - *string*
+ - **type** - *string* 
 	type.
- - **version** - *object*
+	
+ - **version** - *object* 
 	model version.
 
 		
@@ -32,6 +33,7 @@ initialize new object.
 void
 	
 ```javascript
+	var BaseModel = require('capital-models').Base;
 	var base = new Base('type', {}); 
 ```	
 ###copy(*source*)
