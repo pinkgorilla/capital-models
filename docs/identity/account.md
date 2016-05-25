@@ -9,7 +9,7 @@ password					|string			|				|password
 email	 					|string			|				|email address
 locked	 					|bool			|false			|account is locked 
 confirmed 					|bool			|false			|account is confirmed
-roles		 			    |array	  		|				|time when the data is created
+roles		 			    |array	  		|				|account roles
 
 ###**methods**
 ###constructor(*source*)
