@@ -1,6 +1,6 @@
 {
   "name": "capital-models",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "models collection",
   "main": "index.js",
   "scripts": {
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/pinkgorilla/models/issues"
   },
-  "homepage": "https://github.com/pinkgorilla/models#readme"
+  "homepage": "https://github.com/pinkgorilla/models#readme",
+  "directories": {
+    "doc": "docs"
+  }
 }

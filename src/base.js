@@ -1,6 +1,7 @@
 'use strict'
 module.exports = class BaseModel {
     constructor(type, version) {
+        this._id = '';
         this._stamp = '';
         this._type = type;
         this._version = version;
@@ -17,13 +18,13 @@ module.exports = class BaseModel {
     stamp(actor, agent) {
         var now = new Date();
 
-        if (this._createdBy == '')
+        if (!this._createdBy || this._createdBy.length < 1)
             this._createdBy = actor;
 
-        if (this._createdDate == '')
+        if (!this._createdDate)
             this._createdDate = now;
 
-        if (this._createAgent == '')
+        if (!this._createAgent || this._createAgent.length < 1)
             this._createAgent = agent;
 
         var ticks = ((now.getTime() * 10000) + 621355968000000000);
@@ -37,6 +38,7 @@ module.exports = class BaseModel {
     copy(source) {
         if (source)
             for (var prop in this)
-                this[prop] = source[prop];
+                if (source[prop])
+                    this[prop] = source[prop];
     }
 }
