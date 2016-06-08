@@ -1,19 +1,2 @@
-var ns = {};
-
-ns.Base = require('./src/base');
-
-// identity namespace
-ns.identity = {};
-ns.identity.Account = require('./src/identity/account');
-ns.identity.UserProfile = require('./src/identity/user-profile');
-ns.identity.UserOrganizationInfo = require('./src/identity/user-organization-info');
-
-// workplan namespace
-ns.workplan = {};
-ns.workplan.UserWorkplan = require('./src/workplan/user-workplan');
-ns.workplan.UserWorkplanItem = require('./src/workplan/user-workplan-item');
-ns.workplan.Period = require('./src/workplan/period');
-ns.workplan.UserWorkplanSummary = require('./src/workplan/user-workplan-summary');
-ns.map = require('./src/map')
-
-module.exports = ns;
+var models = module.exports; 
+models.MongoModel = require('./src/mongo-model'); 

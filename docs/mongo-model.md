@@ -1,5 +1,5 @@
-##**Base**
-base model
+##**MongoModel**
+base mongodb model
 
 ###**properties**
 Name 						| Type 			| Default 	    | Description
@@ -33,8 +33,8 @@ initialize new object.
 void
 	
 ```javascript
-	var BaseModel = require('capital-models').Base;
-	var base = new Base('type', {}); 
+	var MongoModel = require('capital-models').MongoModel;
+	var mongoModel = new MongoModel('type', {}); 
 ```	
 ###copy(*source*)
 copy values from source to this object.
@@ -49,18 +49,18 @@ copy values from source to this object.
 void
 	
 ```javascript 
-	base.copy(source);
+	mongoModel.copy(source);
 ```	
 
 
 ###**Inheriting**
 ```
-	var BaseModel = require('capital-models').Base;
-	class MyModel extends BaseModel
+	var MongoModel = require('capital-models').MongoModel;
+	class MyModel extends MongoModel
 	{
 		constructor(source)
 		{
-			super('my-model', '1.0.0'); // call Base constructor
+			super('my-model', '1.0.0'); // call MongoModel constructor
 			
 			// Define properties.
 			this.childProperty = ''; // property need to be initialized.

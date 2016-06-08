@@ -1,7 +1,6 @@
 'use strict'
-module.exports = class BaseModel {
+module.exports = class MongoModel {
     constructor(type, version) {
-        this._id = '';
         this._stamp = '';
         this._type = type;
         this._version = version;
@@ -36,9 +35,14 @@ module.exports = class BaseModel {
     }
 
     copy(source) {
-        if (source)
+        if (source) {
+            this._id = '';
             for (var prop in this)
                 if (source[prop])
                     this[prop] = source[prop];
+                    
+            if (!this._id || this._id == '')
+                delete (this._id);
+        }
     }
 }
