@@ -1,5 +1,5 @@
 'use strict'
-module.exports = class MongoModel {
+module.exports = class BaseModel {
     constructor(type, version) {
         this._stamp = '';
         this._type = type;
