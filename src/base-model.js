@@ -38,7 +38,7 @@ module.exports = class BaseModel {
         if (source) {
             this._id = '';
             for (var prop in this)
-                if (source[prop])
+                if (source[prop] != undefined)
                     this[prop] = source[prop];
                     
             if (!this._id || this._id == '')
